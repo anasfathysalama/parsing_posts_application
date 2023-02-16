@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <a class="btn btn-outline-info float-right" href="{{ path('app_crud_index') }}">
+                All
+            </a>
+        </div>
+        <div class="card-body">
+            <b class="text-muted">Name:</b>
+            <p>{{ item.title }}</p>
+            {% endif %}
+            <b class="text-muted">Description:</b>
+            <p>{{ item.description }}</p>
+            <b class="text-muted">Image:</b>
+            <img class="img-thumbnail" style="width: 80px;" src="{{ item.image }}">
+        </div>
+    </div>
+</div>
+{% endblock %}
