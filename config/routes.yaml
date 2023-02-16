@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\HomeController::index
+#api_post_edit:
+#  path:       /api/posts
+#  controller: App\Controller\HomeController::index
+#  methods:    POST
